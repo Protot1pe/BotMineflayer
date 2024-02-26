@@ -601,7 +601,7 @@ def chat(this, user, message, *args):
 def chat(this, user, message, *args):
     if user and (user != displayName):    
         if message == '#git':
-            bot.chat("https://github.com/MrShopa5/PodikMineflayer")      
+            bot.chat("https://github.com/MrShopa5/BotMineflayer")      
             
 
 while True:

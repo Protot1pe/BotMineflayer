@@ -609,7 +609,11 @@ def chat(this, user, message, *args):
             
             bot.pathfinder.setGoal(pathfinder.goals.GoalNear(x, y, z))
 
-            
+@On(bot, 'chat')
+def chat(this, user, message, *args):
+    if user and (user != displayName):    
+        if message == '#git':
+            bot.chat("https://github.com/MrShopa5/BotMineflayer")            
             
 
 while True:
